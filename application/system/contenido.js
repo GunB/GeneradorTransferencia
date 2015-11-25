@@ -69,7 +69,7 @@ var macrorecursos = {
                 nombre: "portada",
                 tipo: "layout",
                 estilo: "layout_portada",
-                background: "img/fondo_portada.png",
+                background: "img/fondo_portada.jpg",
                 componentes: {
                     1: {},
                     2: {
@@ -86,6 +86,36 @@ var macrorecursos = {
                                         1: {
                                             tipo: "titulo",
                                             estilo: "titulo_saberes",
+                                            atributos: {
+                                                titulo: "Titulo saberes",
+                                                subtitulo: "subtitulo de los saberes",
+                                                mostrar_icono: true
+                                            }
+                                        },
+                                        2: {
+                                            tipo: "lista",
+                                            estilo: "lista_saberes",
+                                            atributos: {
+                                                categoria: "no_numerada",
+                                                elementos: {
+                                                    1: "Las TIC: Conceptualización.",
+                                                    2: "Recursos, herramientas y programas.",
+                                                    3: "TIC en educación.",
+                                                    4: "Nuevos conceptos.",
+                                                    5: "Nuevos competencias."
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                2: {
+                                    tag: "Plantilla",
+                                    tipo: "layout",
+                                    estilo: "layout_og_saberes",
+                                    componentes: {
+                                        1: {
+                                            tipo: "titulo",
+                                            estilo: "titulo_saberes2",
                                             atributos: {
                                                 titulo: "subtitulo saberes",
                                                 subtitulo: "",
@@ -112,41 +142,6 @@ var macrorecursos = {
                         }
                     },
                     3: {
-                        tipo: "organizador",
-                        estilo: "organizador_saberes",
-                        atributos: {
-                            titulo: "Resultados",
-                            tabs: {
-                                1: {
-                                    tag: "1",
-                                    tipo: "layout",
-                                    estilo: "layout_og_saberes",
-                                    componentes: {
-                                        1: {
-                                            tipo: "titulo",
-                                            estilo: "titulo_saberes",
-                                            atributos: {
-                                                titulo: "subtitulo resultados",
-                                                subtitulo: "",
-                                                mostrar_icono: false
-                                            }
-                                        },
-                                        2: {
-                                            tipo: "lista",
-                                            estilo: "lista_saberes",
-                                            atributos: {
-                                                categoria: "no_numerada",
-                                                elementos: {
-                                                    1: "Caracterizar los Recursos Educativos Digitales para la enseñanza de lenguas en el SENA de acuerdo con los criterios pedagógicos establecidos por la institución."
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    4: {
                         tipo: "boton",
                         estilo: "boton_portada",
                         atributos: {
